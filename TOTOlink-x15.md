@@ -5,6 +5,7 @@ V1.0.0-B20230714.1105
 #### Vulnerability details
 
 There are stack overflow and command injection vulnerabilities in the formMapReboot function. There is no good control length by setting deviceMacAdd. There is a stack overflow when strcpy is copied, and the return address can be overwritten. When v5 is copied to the v4 variable, there is no command filtering, and command execution can be achieved, so that command execution can be achieved.
+![1](TOTOlink-x15-Gh-V1.0.0-B20230714/1.png)
 
 ![image-20250523202635487](TOTOlink-x15-Gh-V1.0.0-B20230714/image-20250523202635487.png)
 
